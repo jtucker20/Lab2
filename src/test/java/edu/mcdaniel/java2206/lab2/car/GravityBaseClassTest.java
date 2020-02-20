@@ -1,18 +1,19 @@
-package edu.mcdaniel.java2206.lab2.components;
+package edu.mcdaniel.java2206.lab2.car;
 
+import edu.mcdaniel.java2206.lab2.gravity.GravityBaseClass;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ExampleTest {
+class GravityBaseClassTest {
 
-    private Example exampleClass;
+    private GravityBaseClass gravityBaseClassClass;
 
     @BeforeEach
     void setUp() {
 
-        exampleClass = new Example();
+        gravityBaseClassClass = new GravityBaseClass();
 
     }
 
@@ -23,7 +24,7 @@ class ExampleTest {
         String expected = "Hello World!";
 
         // Act
-        String actual = exampleClass.getMessage();
+        String actual = gravityBaseClassClass.getMessage();
 
         // Assert
         assertEquals(expected, actual);

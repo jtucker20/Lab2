@@ -1,9 +1,14 @@
 package edu.mcdaniel.java2206.lab2;
 
-import edu.mcdaniel.java2206.lab2.components.Example;
+import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
+import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class is designed to start/wrap your class.
@@ -55,17 +60,54 @@ public class Application {
         SpringApplication.run(Application.class, args);
 
         //===// User Defined Behavior //=========================================================//
-        //TODO: INSTANTIATE YOUR APPLICATION'S PRIMARY CLASS
-        Example exampleWithStandardGreeting = new Example();
+        ToyotaCamry camry = new ToyotaCamry();
+        ToyotaCorolla corolla = new ToyotaCorolla();
 
-        Example exampleWithCustomGreeting = new Example()
-                .withGreeting("Greetings")
-                .withAudience("Earthlings");
+        List<Vehicle> vehicleList = new ArrayList<>();
+        vehicleList.add(camry);
+        vehicleList.add(corolla);
 
-        //TODO: CALL YOUR APPLICATION'S PRIMARY CLASS METHODS
-        System.out.println(exampleWithStandardGreeting.getMessage());
+        for(Vehicle vehicle : vehicleList){
 
-        System.out.println(exampleWithCustomGreeting.getMessage());
+            if(vehicle instanceof ToyotaCorolla){
+                ToyotaCorolla thisToyotaCorolla = (ToyotaCorolla) vehicle;
+                thisToyotaCorolla.corollaLightsDim(0.0);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Vehicle veh1 = new ToyotaCamry();
+        Vehicle veh2 = new ToyotaCorolla();
+
+
+
+
+
+
+
+
+        List<Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(veh1);
+        vehicles.add(veh2);
+
+        for(Vehicle vehicle : vehicles){
+            vehicle.turnOnLights();
+        }
+
+        for(Vehicle vehicle : vehicles){
+            System.out.println(vehicle.showLightsStatus());
+        }
 
     }
 

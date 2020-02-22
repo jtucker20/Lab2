@@ -18,7 +18,6 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
         this.lightsOn = false;
     }
 
-
     //Major Methods
     @Override
     public void accel(double percentOfMaxAccel) {
@@ -51,7 +50,7 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 
-
+    //Getters
     public double getAccelerationRate() {
         return accelerationRate;
     }

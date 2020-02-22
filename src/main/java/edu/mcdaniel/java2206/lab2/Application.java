@@ -59,7 +59,7 @@ public class Application {
         //===// Spring Application Hook //=======================================================//
         SpringApplication.run(Application.class, args);
 
-        //===// User Defined Behavior //=========================================================//
+        //Please do not change this information.
         ToyotaCamry camry = new ToyotaCamry();
         ToyotaCorolla corolla = new ToyotaCorolla();
 
@@ -75,27 +75,8 @@ public class Application {
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
         Vehicle veh1 = new ToyotaCamry();
         Vehicle veh2 = new ToyotaCorolla();
-
-
-
-
-
-
-
 
         List<Vehicle> vehicles = new ArrayList<>();
         vehicles.add(veh1);
@@ -109,6 +90,27 @@ public class Application {
             System.out.println(vehicle.showLightsStatus());
         }
 
+        System.out.println("Predefined behavior ends.");
+        //===// Do not modify, please //=========================================================//
+        //Here I'm making the Ford Vehicles
+//        Vehicle veh3 = new FordFocus();
+//        Vehicle veh4 = new FordF150();
+
+        //Adding these to the list
+//        vehicles.add(veh3);
+//        vehicles.add(veh4);
+
+        //Doing some actions on the vehicles.
+        for(Vehicle vehicle : vehicles){
+            vehicle.accel(50);
+            vehicle.toggleLights();
+            vehicle.brake(75);
+        }
+
+        //Printing out the state
+        for(Vehicle vehicle : vehicles){
+            System.out.println(vehicle.showVehicleState());
+        }
     }
 
 

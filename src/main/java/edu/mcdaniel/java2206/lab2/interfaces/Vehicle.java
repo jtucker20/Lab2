@@ -10,4 +10,6 @@ public interface Vehicle {
 
     String showLightsStatus();
 
+    String showVehicleState();
+
 }

@@ -5,8 +5,8 @@ import edu.mcdaniel.java2206.lab2.vehicles.ToyotaVehicle;
 
 public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 
+
     //Private Assets
-    private double speed;
     private double accelerationRate;
     private double distance;
 
@@ -51,10 +51,34 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
         }
     }
 
+    @Override
+    public String showVehicleState() {
 
+        return "This vehicle has an acceleration of: " + this.accelerationRate
+                + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+    }
+
+    //Minor Methods
     public void corollaLightsDim(double percentDimming){
         this.lightsDimPercentage = percentDimming;
         System.out.println("Lights have been dimmed to " + this.lightsDimPercentage);
 
+    }
+
+    //Getters
+    public double getAccelerationRate() {
+        return accelerationRate;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public boolean isLightsOn() {
+        return lightsOn;
+    }
+
+    public double getLightsDimPercentage() {
+        return lightsDimPercentage;
     }
 }

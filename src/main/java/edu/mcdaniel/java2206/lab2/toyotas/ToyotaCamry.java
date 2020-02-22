@@ -6,7 +6,6 @@ import edu.mcdaniel.java2206.lab2.vehicles.ToyotaVehicle;
 public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
 
     //Private Assets
-    private double speed;
     private double accelerationRate;
     private double distance;
 
@@ -44,5 +43,24 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
     @Override
     public String showLightsStatus() {
         return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
+    }
+
+    @Override
+    public String showVehicleState() {
+        return "This vehicle has an acceleration of: " + this.accelerationRate
+                + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+    }
+
+
+    public double getAccelerationRate() {
+        return accelerationRate;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public boolean isLightsOn() {
+        return lightsOn;
     }
 }

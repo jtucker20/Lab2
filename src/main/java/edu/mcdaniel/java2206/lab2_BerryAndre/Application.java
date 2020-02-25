@@ -1,8 +1,8 @@
-package edu.mcdaniel.java2206.lab2;
+package edu.mcdaniel.java2206.lab2_BerryAndre;
 
-import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
-import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
-import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
+import edu.mcdaniel.java2206.lab2_BerryAndre.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2_BerryAndre.toyotas.ToyotaCamry;
+import edu.mcdaniel.java2206.lab2_BerryAndre.toyotas.ToyotaCorolla;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

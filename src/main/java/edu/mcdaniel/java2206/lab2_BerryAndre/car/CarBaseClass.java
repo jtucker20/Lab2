@@ -1,4 +1,4 @@
-package edu.mcdaniel.java2206.lab2.car;
+package edu.mcdaniel.java2206.lab2_BerryAndre.car;
 
 public class CarBaseClass {
 

@@ -1,6 +1,6 @@
-package edu.mcdaniel.java2206.lab2.vehicles;
+package edu.mcdaniel.java2206.lab2_BerryAndre.vehicles;
 
-import edu.mcdaniel.java2206.lab2.car.CarBaseClass;
+import edu.mcdaniel.java2206.lab2_BerryAndre.car.CarBaseClass;
 
 public class ToyotaVehicle extends CarBaseClass {
 

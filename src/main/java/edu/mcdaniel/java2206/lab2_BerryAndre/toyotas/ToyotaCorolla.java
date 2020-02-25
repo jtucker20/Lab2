@@ -1,7 +1,7 @@
-package edu.mcdaniel.java2206.lab2.toyotas;
+package edu.mcdaniel.java2206.lab2_BerryAndre.toyotas;
 
-import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
-import edu.mcdaniel.java2206.lab2.vehicles.ToyotaVehicle;
+import edu.mcdaniel.java2206.lab2_BerryAndre.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2_BerryAndre.vehicles.ToyotaVehicle;
 
 public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 

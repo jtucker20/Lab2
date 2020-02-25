@@ -1,10 +1,13 @@
 package edu.mcdaniel.java2206.lab2_BerryAndre.car;
 
+import edu.mcdaniel.java2206.lab2_BerryAndre.enums.ColorsOfCars;
+
 public class CarBaseClass {
 
     private String make;
     private String model;
     private String year;
+    private ColorsOfCars color;
 
     private boolean isOn;
 
@@ -13,6 +16,7 @@ public class CarBaseClass {
         model = "";
         year = "2020";
         isOn = false;
+        color = ColorsOfCars.NONE;
     }
 
     public String getMake() {

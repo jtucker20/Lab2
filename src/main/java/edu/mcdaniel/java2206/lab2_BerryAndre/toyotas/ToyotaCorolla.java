@@ -16,7 +16,7 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
     //Constructors
     public ToyotaCorolla(){
         super();
-        setModel("Corola");
+        setModel("Corolla");
         this.lightsOn = false;
     }
 
@@ -54,7 +54,7 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
     @Override
     public String showVehicleState() {
 
-        return "This vehicle has an acceleration of: " + this.accelerationRate
+        return "This Toyota Corolla has an acceleration of: " + this.accelerationRate
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 

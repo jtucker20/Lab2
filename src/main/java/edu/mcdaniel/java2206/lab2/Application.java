@@ -1,5 +1,7 @@
 package edu.mcdaniel.java2206.lab2;
 
+import edu.mcdaniel.java2206.lab2.fords.FordF150;
+import edu.mcdaniel.java2206.lab2.fords.FordFocus;
 import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
@@ -62,10 +64,14 @@ public class Application {
         //Please do not change this information.
         ToyotaCamry camry = new ToyotaCamry();
         ToyotaCorolla corolla = new ToyotaCorolla();
+        FordFocus focus = new FordFocus();
+        FordF150 f150 = new FordF150();
 
         List<Vehicle> vehicleList = new ArrayList<>();
         vehicleList.add(camry);
         vehicleList.add(corolla);
+        vehicleList.add(focus);
+        vehicleList.add(f150);
 
         for(Vehicle vehicle : vehicleList){
 
@@ -77,10 +83,14 @@ public class Application {
 
         Vehicle veh1 = new ToyotaCamry();
         Vehicle veh2 = new ToyotaCorolla();
+        Vehicle veh3 = new FordFocus();
+        Vehicle veh4 = new FordF150();
 
         List<Vehicle> vehicles = new ArrayList<>();
         vehicles.add(veh1);
         vehicles.add(veh2);
+        vehicles.add(veh3);
+        vehicles.add(veh4);
 
         for(Vehicle vehicle : vehicles){
             vehicle.turnOnLights();
@@ -93,12 +103,12 @@ public class Application {
         System.out.println("Predefined behavior ends.");
         //===// Do not modify, please //=========================================================//
         //Here I'm making the Ford Vehicles
-        Vehicle veh3 = new FordFocus();
-        Vehicle veh4 = new FordF150();
+        //Vehicle veh3 = new FordFocus();
+        //Vehicle veh4 = new FordF150();
 
         //Adding these to the list
-        vehicles.add(veh3);
-        vehicles.add(veh4);
+        //vehicles.add(veh3);
+       // vehicles.add(veh4);
 
         //Doing some actions on the vehicles.
         for(Vehicle vehicle : vehicles){

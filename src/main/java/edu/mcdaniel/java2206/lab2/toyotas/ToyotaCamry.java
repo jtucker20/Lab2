@@ -7,8 +7,9 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
 
     //Private Assets
     private double accelerationRate;
+    private double timeTraveled;
+    private double mph;
     private double distance;
-
     private boolean lightsOn;
 
     //Constructors
@@ -50,9 +51,25 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 
+    //Minor Methods
+    public void timeTraveled()
+    {
+        this.timeTraveled = distance/mph;
+    }
+
     //Getters
     public double getAccelerationRate() {
         return accelerationRate;
+    }
+
+    public double getTimeTraveled()
+    {
+        return timeTraveled;
+    }
+
+    public double getMph()
+    {
+        return mph;
     }
 
     public double getDistance() {

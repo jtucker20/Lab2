@@ -7,6 +7,7 @@ public interface Vehicle {
 
     void turnOnLights();
     void toggleLights();
+    void timeTraveled();
 
     String showLightsStatus();
 

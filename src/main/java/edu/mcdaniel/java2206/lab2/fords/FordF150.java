@@ -63,7 +63,7 @@ public class FordF150 extends FordVehicle implements Vehicle
     }
 
     //Minor Methods
-    public void focusTimeTraveled()
+    public void timeTraveled()
     {
         this.timeTraveled = distance/mph;
     }

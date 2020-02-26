@@ -8,8 +8,9 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 
     //Private Assets
     private double accelerationRate;
+    private double timeTraveled;
+    private double mph;
     private double distance;
-
     private boolean lightsOn;
     private double lightsDimPercentage;
 
@@ -64,9 +65,24 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 
     }
 
+    public void timeTraveled()
+    {
+        this.timeTraveled = distance/mph;
+    }
+
     //Getters
     public double getAccelerationRate() {
         return accelerationRate;
+    }
+
+    public double getTimeTraveled()
+    {
+        return timeTraveled;
+    }
+
+    public double getMph()
+    {
+        return mph;
     }
 
     public double getDistance() {

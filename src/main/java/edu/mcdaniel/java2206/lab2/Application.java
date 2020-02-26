@@ -107,6 +107,7 @@ public class Application {
             vehicle.accel(50);
             vehicle.toggleLights();
             vehicle.brake(75);
+            vehicle.timeTraveled();
         }
 
         //Printing out the state

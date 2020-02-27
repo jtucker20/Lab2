@@ -35,7 +35,7 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
     //Major Methods
     @Override
     public void accel(double percentOfMaxAccel) {
-        this.accelerationRate = 0.80 * percentOfMaxAccel;
+        this.accelerationRate = 0.60 * percentOfMaxAccel;
     }
 
     @Override

@@ -11,11 +11,12 @@ public class FordF150 extends FordVehicle implements Vehicle {
     private double distance;
 
     private boolean lightsOn;
+    //private double lightsDimPercentage;
 
     //Constructors
     public FordF150(){
         super();
-        setModel("Camry");
+        setModel("F150");
         this.lightsOn = false;
     }
 
@@ -31,17 +32,19 @@ public class FordF150 extends FordVehicle implements Vehicle {
 
     @Override
     public void accel(double percentOfMaxAccel) {
+        this.accelerationRate = 0.45 * percentOfMaxAccel;
 
     }
 
     @Override
     public void brake(double percentOfMaxBrake) {
+        this.accelerationRate = this.accelerationRate - percentOfMaxBrake;
 
     }
 
     @Override
     public void turnOnLights() {
-        this.lightsOn = true;
+        this.lightsOn = false;
 
     }
 
@@ -62,7 +65,13 @@ public class FordF150 extends FordVehicle implements Vehicle {
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 
-    //Getters
+    //Minor Methods
+    //public boolean corollaLightsDim(double percentDimming){
+       // this.lightsDimPercentage = percentDimming;
+      ///  System.out.println("Lights have been dimmed to " + this.lightsDimPercentage);
+
+
+        //Getters
     public double getAccelerationRate() {
         return accelerationRate;
     }
@@ -74,4 +83,8 @@ public class FordF150 extends FordVehicle implements Vehicle {
     public boolean isLightsOn() {
         return lightsOn;
     }
+
+   //public boolean getLightsDimPercentage(){
+       // return lightsDimPercentage;
+
 }

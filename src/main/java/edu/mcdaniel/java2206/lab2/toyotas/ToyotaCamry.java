@@ -31,7 +31,7 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
     //Major Methods
     @Override
     public void accel(double percentOfMaxAccel) {
-        this.accelerationRate = percentOfMaxAccel;
+        this.accelerationRate =0.60 * percentOfMaxAccel;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
 
     @Override
     public void toggleLights() {
-        this.lightsOn = !this.lightsOn;
+        this.lightsOn = this.lightsOn;
     }
 
     @Override

@@ -15,44 +15,14 @@ public class FordFocus extends FordVehicle implements Vehicle {
     //Constructors
     public FordFocus(){
         super();
-        setModel("Camry");
+        setModel("Focus");
         this.lightsOn = false;
     }
 
-
     @Override
-    public void accel(double percentOfMaxAccel) {
-
-    }
-
-    @Override
-    public void brake(double percentOfMaxBrake) {
-
-    }
-
-    @Override
-    public void turnOnLights() {
-
-    }
-
-    @Override
-    public void toggleLights() {
-        this.lightsOn = !this.lightsOn;
-
-    }
-
-    @Override
-    public String showLightsStatus() {
-
-        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
-    }
-
-
-    public String WreckReport(){
+    public String WreckReport() {
         return "this Vehicle has been in" + getNumberOfWrecks() + "wrecks.";
-
     }
-
 
     @Override
     public String getWreckReportForFord() {
@@ -64,6 +34,36 @@ public class FordFocus extends FordVehicle implements Vehicle {
     public String showVehicleState() {
         return "This vehicle has an acceleration of: " + this.accelerationRate
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+    }
+
+
+    @Override
+    public void accel(double percentOfMaxAccel) {
+        this.accelerationRate = 0.45 * percentOfMaxAccel;
+
+    }
+
+    @Override
+    public void brake(double percentOfMaxBrake) {
+        this.accelerationRate = this.accelerationRate - percentOfMaxBrake;
+
+    }
+
+    @Override
+    public void turnOnLights() {
+        this.lightsOn = true;
+
+    }
+
+    @Override
+    public void toggleLights() {
+        this.lightsOn = !this.lightsOn;
+
+    }
+
+    @Override
+    public String showLightsStatus() {
+        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
     }
 
     //Getters

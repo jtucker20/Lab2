@@ -1,18 +1,25 @@
 package edu.mcdaniel.java2206.lab2.car;
 
-public class CarBaseClass {
+public abstract class CarBaseClass {
 
     private String make;
     private String model;
     private String year;
 
     private boolean isOn;
+    private int numberOfWrecks;
 
     public CarBaseClass(){
         make = "";
         model = "";
         year = "2020";
         isOn = false;
+        this.numberOfWrecks = 0;
+    }
+    public abstract String WreckReport();
+
+    public int getNumberOfWrecks(){
+        return this.numberOfWrecks;
     }
 
     public String getMake() {

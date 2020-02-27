@@ -37,12 +37,27 @@ public class FordFocus extends FordVehicle implements Vehicle {
 
     @Override
     public void toggleLights() {
+        this.lightsOn = !this.lightsOn;
 
     }
 
     @Override
     public String showLightsStatus() {
-        return null;
+
+        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
+    }
+
+
+    public String WreckReport(){
+        return "this Vehicle has been in" + getNumberOfWrecks() + "wrecks.";
+
+    }
+
+
+    @Override
+    public String getWreckReportForFord() {
+        return "this Vehicle has been in" + getNumberOfWrecks() + "wrecks.";
+
     }
 
     @Override

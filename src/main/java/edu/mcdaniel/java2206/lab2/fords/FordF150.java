@@ -21,6 +21,15 @@ public class FordF150 extends FordVehicle implements Vehicle {
 
 
     @Override
+    public String WreckReport() {
+        return "this Vehicle has been in" + getNumberOfWrecks() + "wrecks.";
+    }
+    @Override
+    public String getWreckReportForFord() {
+        return "This Toyota has been in" + getNumberOfWrecks() + "wrecks.";
+    }
+
+    @Override
     public void accel(double percentOfMaxAccel) {
 
     }
@@ -32,17 +41,19 @@ public class FordF150 extends FordVehicle implements Vehicle {
 
     @Override
     public void turnOnLights() {
+        this.lightsOn = true;
 
     }
 
     @Override
     public void toggleLights() {
-
+        this.lightsOn = !this.lightsOn;
     }
 
     @Override
     public String showLightsStatus() {
-        return null;
+        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
+
     }
 
     @Override

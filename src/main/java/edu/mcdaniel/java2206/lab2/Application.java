@@ -67,6 +67,7 @@ public class Application {
         FordFocus focus = new FordFocus();
         FordF150 f150 = new FordF150();
 
+
         List<Vehicle> vehicleList = new ArrayList<>();
         vehicleList.add(camry);
         vehicleList.add(corolla);

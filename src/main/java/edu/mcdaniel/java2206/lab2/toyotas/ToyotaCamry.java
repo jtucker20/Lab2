@@ -18,6 +18,16 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
         this.lightsOn = false;
     }
 
+    @Override
+    public String WreckReport() {
+        return "this Vehicle has been in" + getNumberOfWrecks() + "wrecks.";
+    }
+
+    @Override
+    public String getWreckReportForToyota() {
+        return "This Toyota has been in" + getNumberOfWrecks() + "wrecks.";
+    }
+
     //Major Methods
     @Override
     public void accel(double percentOfMaxAccel) {

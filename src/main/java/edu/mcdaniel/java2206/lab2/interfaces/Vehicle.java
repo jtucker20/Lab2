@@ -5,7 +5,6 @@ public interface Vehicle {
     void accel(double percentOfMaxAccel);
     void brake(double percentOfMaxBrake);
 
-    void turnOnLights();
     void toggleLights();
 
     String showLightsStatus();

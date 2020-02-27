@@ -33,11 +33,6 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
     }
 
     @Override
-    public void turnOnLights() {
-        this.lightsOn = true;
-    }
-
-    @Override
     public void toggleLights() {
         this.lightsOn = !this.lightsOn;
     }

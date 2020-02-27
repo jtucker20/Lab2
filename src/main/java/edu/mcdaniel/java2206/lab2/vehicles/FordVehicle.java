@@ -4,7 +4,28 @@ import edu.mcdaniel.java2206.lab2.car.CarBaseClass;
 
 public class FordVehicle extends CarBaseClass {
 
-    public FordVehicle(){
+    private double speed;
+
+    public FordVehicle()
+    {
+        super();
         setMake("Ford");
+        speed = 0;
+    }
+
+    public String displaySpeedAsString()
+    {
+        return "This Toyota's speed is: " + speed;
+    }
+
+    public double getSpeed()
+    {
+        return speed;
+    }
+
+    public void setSpeed(double speed)
+    {
+        this.speed = speed;
     }
 }
+

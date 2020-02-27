@@ -69,9 +69,9 @@ public class Application {
         vehicleList.add(camry);
         vehicleList.add(corolla);
 
-        for(Vehicle vehicle : vehicleList){
+        for (Vehicle vehicle : vehicleList) {
 
-            if(vehicle instanceof ToyotaCorolla){
+            if (vehicle instanceof ToyotaCorolla) {
                 ToyotaCorolla thisToyotaCorolla = (ToyotaCorolla) vehicle;
                 thisToyotaCorolla.corollaLightsDim(0.0);
             }
@@ -84,11 +84,11 @@ public class Application {
         vehicles.add(veh1);
         vehicles.add(veh2);
 
-        for(Vehicle vehicle : vehicles){
+        for (Vehicle vehicle : vehicles) {
             vehicle.turnOnLights();
         }
 
-        for(Vehicle vehicle : vehicles){
+        for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle.showLightsStatus());
         }
 
@@ -103,30 +103,31 @@ public class Application {
         vehicles.add(veh4);
 
         //Doing some actions on the vehicles.
-        for(Vehicle vehicle : vehicles){
+        for (Vehicle vehicle : vehicles) {
             vehicle.accel(50);
             vehicle.toggleLights();
             vehicle.brake(75);
         }
 
         //Printing out the state
-        for(Vehicle vehicle : vehicles){
+        for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle.showVehicleState());
+
         }
+
+
+        //=============================================================================================
+        // Minor Methods(s)
+        //=============================================================================================
+
+        //No minor methods made for this class
+
+
+        //=============================================================================================
+        // Getters and Setters
+        //=============================================================================================
+
+        //No private assets we want to expose in this class
+
     }
-
-
-    //=============================================================================================
-    // Minor Methods(s)
-    //=============================================================================================
-
-    //No minor methods made for this class
-
-
-    //=============================================================================================
-    // Getters and Setters
-    //=============================================================================================
-
-    //No private assets we want to expose in this class
-
 }

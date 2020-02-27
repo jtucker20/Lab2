@@ -1,13 +1,16 @@
 package edu.mcdaniel.java2206.lab2.fords;
 
+import edu.mcdaniel.java2206.lab2.enums.ColorsOfCars;
 import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2.vehicles.FordVehicle;
 
 public class FordF150 extends FordVehicle implements Vehicle {
 
-        //Private Assets
+
+    //Private Assets
         private double accelerationRate;
         private double distance;
+        private final ColorsOfCars color;
 
         private boolean lightsOn;
 
@@ -16,6 +19,7 @@ public class FordF150 extends FordVehicle implements Vehicle {
             super();
             setModel("F150");
             this.lightsOn = false;
+            this.color = ColorsOfCars.ORANGE;
         }
 
         //Major Methods
@@ -46,8 +50,12 @@ public class FordF150 extends FordVehicle implements Vehicle {
 
         @Override
         public String showVehicleState() {
-            return "This vehicle has an acceleration of: " + this.accelerationRate
-                    + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+            return "This Ford F150 has an acceleration of: " + this.accelerationRate
+                    + "\nThis Ford F150 has it's lights " + ((this.lightsOn) ? "On" : "Off");
+        }
+
+        public String showColorOfCar(){
+            return "This Ford F150 is: " + this.color;
         }
 
         //Getters

@@ -46,8 +46,8 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
 
     @Override
     public String showVehicleState() {
-        return "This vehicle has an acceleration of: " + this.accelerationRate
-                + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+        return "This Toyota Camry has an acceleration of: " + this.accelerationRate
+                + "\nThis Toyota Camry has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 
     //Getters

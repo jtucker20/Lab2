@@ -17,10 +17,10 @@ class ToyotaCorollaTest {
     @Test
     void accel() {
         //Arrange
-        double expected = 70.0;
+        double expected = 0.0;
 
         //Act
-        this.corolla.accel(70.0);
+        this.corolla.accel(0.0);
 
         //Assert
         assertEquals(expected, this.corolla.getAccelerationRate());
@@ -41,12 +41,15 @@ class ToyotaCorollaTest {
     @Test
     void showVehicleState() {
         //Arrange
-
+        String expected = "This vehicle has an acceleration of: 0.0\n" +
+                "This vehicle has it's lights Off\n" +
+                "This vehicle's time traveled is 0.0";
 
         //Act
-
+        String actual = this.corolla.showVehicleState();
 
         //Assert
+        assertEquals(expected, actual);
 
     }
 

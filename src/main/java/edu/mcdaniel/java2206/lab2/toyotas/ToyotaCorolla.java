@@ -17,7 +17,7 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
     //Constructors
     public ToyotaCorolla(){
         super();
-        setModel("Corola");
+        setModel("Corolla");
         this.lightsOn = false;
     }
 

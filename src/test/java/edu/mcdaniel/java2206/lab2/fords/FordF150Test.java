@@ -42,13 +42,15 @@ class FordF150Test {
     @Test
     void showVehicleState() {
         //Arrange
-
+        String expected = "This vehicle has an acceleration of: 0.0\n" +
+                "This vehicle has it's lights Off\n" +
+                "This vehicle's time traveled is 0.0";
 
         //Act
-
+        String actual = this.F150.showVehicleState();
 
         //Assert
-
+        assertEquals(expected, actual);
     }
 
 }

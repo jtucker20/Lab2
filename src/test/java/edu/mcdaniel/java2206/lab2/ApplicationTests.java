@@ -8,26 +8,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ApplicationTests {
 
-	private ToyotaCamry ToyotaCamryClass;
-
-	@BeforeEach
-	void setUp()
-	{
-
-		ToyotaCamryClass = new ToyotaCamry();
-
-	}
-
-	@Test
-	void accel()
-	{
-		//Arrange
-
-		//Act
-
-		//Assert
-
-
-	}
-
 }

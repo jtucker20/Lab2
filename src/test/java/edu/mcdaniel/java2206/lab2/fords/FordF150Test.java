@@ -52,5 +52,4 @@ class FordF150Test {
         //Assert
         assertEquals(expected, actual);
     }
-
 }

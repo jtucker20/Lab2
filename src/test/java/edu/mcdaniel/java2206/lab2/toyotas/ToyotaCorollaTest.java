@@ -52,6 +52,4 @@ class ToyotaCorollaTest {
         assertEquals(expected, actual);
 
     }
-
-
 }

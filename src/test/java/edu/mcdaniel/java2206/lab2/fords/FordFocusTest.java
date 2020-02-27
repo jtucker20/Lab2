@@ -52,5 +52,4 @@ class FordFocusTest {
         //Assert
         assertEquals(expected, actual);
     }
-
 }

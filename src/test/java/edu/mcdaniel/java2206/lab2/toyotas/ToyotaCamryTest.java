@@ -51,5 +51,4 @@ class ToyotaCamryTest {
         //Assert
         assertEquals(expected, actual);
     }
-
 }

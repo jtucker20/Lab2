@@ -16,6 +16,8 @@ public class FordF150 extends FordVehicle implements Vehicle
         super();
         setModel("F150");
         this.headlightsOn = false;
+        this.accelRate = 0;
+        this.distance= 0;
     }
 //Major Methods
     @Override
@@ -53,6 +55,10 @@ public class FordF150 extends FordVehicle implements Vehicle
     public double getDistance()
     {
         return this.distance;
+    }
+    public boolean getLights()
+    {
+        return this.headlightsOn;
     }
 
 }

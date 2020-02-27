@@ -1,6 +1,5 @@
 package edu.mcdaniel.java2206.lab2.toyotas;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,53 +7,41 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ToyotaCamryTest {
     //Arrange
-    private ToyotaCamry tc;
+    private ToyotaCamry toyotacamry;
     @BeforeEach
     void setUp()
     {
-        tc = new ToyotaCamry();
+        toyotacamry = new ToyotaCamry();
     }
 
-    @Test
 
-    void accel() {
-        //Act
-        tc.accel(30);
+    @Test
+    void accel()
+    {
+        toyotacamry.accel(30);
         //Assert
-        assertEquals(30, tc.getAccelerationRate());
+        assertEquals(30, toyotacamry.getAccelerationRate());
     }
 
     @Test
     void brake() {
         //Act
+        double before = toyotacamry.getAccelerationRate();
+        toyotacamry.brake(30);
         //Assert
-    }
-
-    @Test
-    void turnOnLights() {
-    }
-
-    @Test
-    void toggleLights() {
-    }
-
-    @Test
-    void showLightsStatus() {
+        assertEquals(before - 30, toyotacamry.getAccelerationRate());
     }
 
     @Test
     void showVehicleState() {
-    }
-
-    @Test
-    void getAccelerationRate() {
-    }
-
-    @Test
-    void getDistance() {
-    }
-
-    @Test
-    void isLightsOn() {
+        //Act
+        String accelMsg = "This vehicle has an acceleration of: ";
+        String lightsMsg = "\nThis vehicle has it's lights ";
+        boolean lights = toyotacamry.isLightsOn();
+        toyotacamry.accel(30);
+        toyotacamry.toggleLights();
+        //Assert
+        String expected = accelMsg + toyotacamry.getAccelerationRate() + lightsMsg + (!(lights) ? "On" : "Off");
+        assertEquals(expected, toyotacamry.showVehicleState());
     }
 }

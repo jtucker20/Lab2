@@ -16,6 +16,8 @@ public class FordFocus extends FordVehicle implements Vehicle
         super();
         setModel("Focus");
         this.headlightsOn = false;
+        this.distance = 0;
+        this.accelRate = 0;
     }
     //Major Methods
     @Override
@@ -53,5 +55,9 @@ public class FordFocus extends FordVehicle implements Vehicle
     public double getDistance()
     {
         return this.distance;
+    }
+    public boolean getLights()
+    {
+        return this.headlightsOn;
     }
 }

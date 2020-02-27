@@ -1,5 +1,7 @@
 package edu.mcdaniel.java2206.lab2;
 
+import edu.mcdaniel.java2206.lab2.fords.FordF150;
+import edu.mcdaniel.java2206.lab2.fords.FordFocus;
 import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
@@ -83,7 +85,7 @@ public class Application {
         vehicles.add(veh2);
 
         for(Vehicle vehicle : vehicles){
-            vehicle.turnOnLights();
+            vehicle.toggleLights();
         }
 
         for(Vehicle vehicle : vehicles){
@@ -93,12 +95,12 @@ public class Application {
         System.out.println("Predefined behavior ends.");
         //===// Do not modify, please //=========================================================//
         //Here I'm making the Ford Vehicles
-        //Vehicle veh3 = new FordFocus();
-        //Vehicle veh4 = new FordF150();
+        Vehicle veh3 = new FordFocus();
+        Vehicle veh4 = new FordF150();
 
         //Adding these to the list
-        //vehicles.add(veh3);
-        //vehicles.add(veh4);
+        vehicles.add(veh3);
+        vehicles.add(veh4);
 
         //Doing some actions on the vehicles.
         for(Vehicle vehicle : vehicles){

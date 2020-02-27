@@ -2,7 +2,8 @@ package edu.mcdaniel.java2206.lab2_BerryAndre.vehicles;
 
 import edu.mcdaniel.java2206.lab2_BerryAndre.car.CarBaseClass;
 
-public class ToyotaVehicle extends CarBaseClass {
+public class ToyotaVehicle extends CarBaseClass
+{
 
     private double speed;
 
@@ -12,16 +13,19 @@ public class ToyotaVehicle extends CarBaseClass {
         speed = 0;
     }
 
-    public String displaySpeedAsString(){
+    public String displaySpeedAsString()
+    {
         return "This Toyota's speed is: " + speed;
     }
 
 
-    public double getSpeed() {
+    public double getSpeed()
+    {
         return speed;
     }
 
-    public void setSpeed(double speed) {
+    public void setSpeed(double speed)
+    {
         this.speed = speed;
     }
 }

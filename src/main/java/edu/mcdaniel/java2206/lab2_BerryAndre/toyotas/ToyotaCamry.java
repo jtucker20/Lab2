@@ -3,7 +3,8 @@ package edu.mcdaniel.java2206.lab2_BerryAndre.toyotas;
 import edu.mcdaniel.java2206.lab2_BerryAndre.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2_BerryAndre.vehicles.ToyotaVehicle;
 
-public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
+public class ToyotaCamry extends ToyotaVehicle implements Vehicle
+{
 
     //Private Assets
     private double accelerationRate;

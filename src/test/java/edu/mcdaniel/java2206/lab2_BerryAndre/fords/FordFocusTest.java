@@ -17,7 +17,7 @@ class FordFocusTest
     }
 
     @Test
-    void accel()
+    void accel()  //test accel function
     {
         double expected = 70.0;
 
@@ -33,7 +33,6 @@ class FordFocusTest
 
         this.Focus.brake(50.0);
 
-        //assertEquals(expected, this.Focus.getBrakeRate());
     }
 
     @Test

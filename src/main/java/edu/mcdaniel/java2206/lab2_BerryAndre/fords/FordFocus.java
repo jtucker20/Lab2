@@ -65,11 +65,6 @@ public class FordFocus extends CarBaseClass implements Vehicle
         return accelerationRate;
     }
 
-    public double getBrakeRate()
-    {
-        return percentOfMaxBrake;
-    }
-
     public double getDistance()
     {
         return distance;

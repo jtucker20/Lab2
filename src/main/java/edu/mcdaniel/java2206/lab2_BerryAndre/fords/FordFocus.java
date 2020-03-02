@@ -8,58 +8,74 @@ public class FordFocus extends CarBaseClass implements Vehicle
     //Private Assets
     private double accelerationRate;
     private double distance;
+    private double brakeRate;
 
     private boolean lightsOn;
 
     //Constructors
-    public FordFocus(){
+    public FordFocus()
+    {
         super();
-        setModel("Focus");
+        setModel(" Focus");
         this.lightsOn = false;
     }
 
     //Major Methods
     @Override
-    public void accel(double percentOfMaxAccel) {
+    public void accel(double percentOfMaxAccel)
+    {
         this.accelerationRate = percentOfMaxAccel;
     }
 
     @Override
-    public void brake(double percentOfMaxBrake) {
+    public void brake(double percentOfMaxBrake)
+    {
         this.accelerationRate = this.accelerationRate - percentOfMaxBrake;
     }
 
     @Override
-    public void turnOnLights() {
+    public void turnOnLights()
+    {
         this.lightsOn = true;
     }
 
     @Override
-    public void toggleLights() {
+    public void toggleLights()
+    {
         this.lightsOn = !this.lightsOn;
     }
 
     @Override
-    public String showLightsStatus() {
+    public String showLightsStatus()
+    {
         return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
     }
 
     @Override
-    public String showVehicleState() {
+    public String showVehicleState()
+    {
         return "This Ford Focus has an acceleration of: " + this.accelerationRate
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
     }
 
     //Getters
-    public double getAccelerationRate() {
+    public double getAccelerationRate()
+    {
         return accelerationRate;
     }
 
-    public double getDistance() {
+    public double getBrakeRate()
+    {
+        return breakRate;
+    }
+
+    public double getDistance()
+    {
         return distance;
     }
 
-    public boolean isLightsOn() {
+    public boolean isLightsOn()
+    {
         return lightsOn;
     }
 }

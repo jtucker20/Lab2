@@ -16,7 +16,7 @@ public class FordFocus extends CarBaseClass implements Vehicle
     public FordFocus()
     {
         super();
-        setModel(" Focus");
+        setModel("Focus");
         this.lightsOn = false;
     }
 
@@ -26,6 +26,7 @@ public class FordFocus extends CarBaseClass implements Vehicle
     {
         this.accelerationRate = percentOfMaxAccel;
     }
+
 
     @Override
     public void brake(double percentOfMaxBrake)
@@ -66,7 +67,7 @@ public class FordFocus extends CarBaseClass implements Vehicle
 
     public double getBrakeRate()
     {
-        return breakRate;
+        return percentOfMaxBrake;
     }
 
     public double getDistance()

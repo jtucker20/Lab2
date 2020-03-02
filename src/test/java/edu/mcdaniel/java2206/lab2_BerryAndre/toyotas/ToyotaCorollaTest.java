@@ -18,18 +18,24 @@ class ToyotaCorollaTest
     }
 
     @Test
-    void accel()
+    void turnOnLights()
     {
-
+        //boolean expected = true;
+        this.corolla.turnOnLights();
+        assertTrue(this.corolla.isLightsOn());
     }
 
     @Test
-    void brake()
+    void toggleLights()
     {
+        this.corolla.toggleLights();
+        assertTrue(this.corolla.isLightsOn());
     }
 
     @Test
-    void showLightsStatus()
+    void isLightsOn()
     {
+        this.corolla.isLightsOn();
+        assertFalse(this.corolla.isLightsOn());
     }
 }

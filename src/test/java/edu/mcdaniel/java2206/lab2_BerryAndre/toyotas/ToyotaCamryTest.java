@@ -18,21 +18,24 @@ class ToyotaCamryTest
     }
 
     @Test
-    void toggleLight()
+    void turnOnLights()
+    {
+        //boolean expected = true;
+        this.camry.turnOnLights();
+        assertTrue(this.camry.isLightsOn());
+    }
+
+    @Test
+    void toggleLights()
     {
         this.camry.toggleLights();
         assertTrue(this.camry.isLightsOn());
     }
 
     @Test
-    void brake()
+    void isLightsOn()
     {
-
-    }
-
-    @Test
-    void showVehicleState()
-    {
-
+        this.camry.isLightsOn();
+        assertFalse(this.camry.isLightsOn());
     }
 }

@@ -20,7 +20,8 @@ public class FordF150 extends CarBaseClass implements Vehicle
 
     //Major Methods
     @Override
-    public void accel(double percentOfMaxAccel) {
+    public void accel(double percentOfMaxAccel)
+    {
         this.accelerationRate = percentOfMaxAccel;
     }
 

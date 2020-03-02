@@ -33,15 +33,17 @@ class FordFocusTest
 
         this.Focus.brake(50.0);
 
-       // assertEquals(expected, this.Focus.getBrakeRat());
+        //assertEquals(expected, this.Focus.getBrakeRate());
     }
 
     @Test
     void showVehicleState()
     {
-        String expected = "This Ford Focus has an acceleration of: -20.0\n" +
-                "This vehicle has it's lights On";
+        String expected = "This Ford Focus has an acceleration of: 0.0\n" +
+                "This vehicle has it's lights Off";
 
         this.Focus.showVehicleState();
+
+        assertEquals(expected, this.Focus.showVehicleState());
     }
 }

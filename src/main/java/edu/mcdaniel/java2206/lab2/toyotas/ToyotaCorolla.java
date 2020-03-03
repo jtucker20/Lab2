@@ -20,6 +20,16 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
         this.lightsOn = false;
     }
 
+    @Override
+    public String wreckReport() {
+        return null;
+    }
+
+    @Override
+    public String getWreckReportForToyota() {
+        return null;
+    }
+
 
     //Major Methods
     @Override

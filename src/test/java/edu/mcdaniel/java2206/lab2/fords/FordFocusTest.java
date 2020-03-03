@@ -18,7 +18,7 @@ class FordFocusTest {
     @Test
     void accel() {
         //Arranage
-        double expected = 80.0;
+        double expected = 45;
 
         //Act
         this.focus.accel( 100);

@@ -19,13 +19,13 @@ class FordF150Test {
     @Test
     void accel() {
         //Arranage
-        double expected = 80.0;
+        double expected = 45.0;
 
         //Act
         this.f150.accel( 100);
 
         //Assert
-    assertEquals(expected, this.f150.getAccelerationRate());
+        assertEquals(expected, this.f150.getAccelerationRate());
 
     }
 

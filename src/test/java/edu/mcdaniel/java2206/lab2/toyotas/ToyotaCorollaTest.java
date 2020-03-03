@@ -19,7 +19,7 @@ class  ToyotaCorollaTest {
     @Test
     void accel() {
         //Arranage
-        double expected = 80.0;
+        double expected = 60.0;
 
         //Act
         this.corolla.accel(100);

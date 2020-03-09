@@ -1,4 +1,4 @@
-package edu.mcdaniel.java2206.lab2.interfaces;
+package edu.mcdaniel.java2206.lab2MalcolmWatts.interfaces;
 
 public interface Vehicle {
 

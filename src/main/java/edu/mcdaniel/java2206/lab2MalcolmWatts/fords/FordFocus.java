@@ -1,30 +1,27 @@
-package edu.mcdaniel.java2206.lab2.toyotas;
+package edu.mcdaniel.java2206.lab2MalcolmWatts.fords;
 
-import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
-import edu.mcdaniel.java2206.lab2.vehicles.ToyotaVehicle;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.vehicles.FordVehicle;
 
-public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
-
+public class FordFocus extends FordVehicle implements Vehicle {
 
     //Private Assets
     private double accelerationRate;
     private double distance;
 
     private boolean lightsOn;
-    private double lightsDimPercentage;
 
     //Constructors
-    public ToyotaCorolla(){
+    public FordFocus(){
         super();
-        setModel("Corola");
+        setModel("Focus");
         this.lightsOn = false;
     }
-
 
     //Major Methods
     @Override
     public void accel(double percentOfMaxAccel) {
-        this.accelerationRate = 0.80 * percentOfMaxAccel;
+        this.accelerationRate = percentOfMaxAccel;
     }
 
     @Override
@@ -44,25 +41,13 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 
     @Override
     public String showLightsStatus() {
-        if(this.lightsOn) {
-            return "The lights are On.";
-        } else {
-            return "The lights are Off.";
-        }
+        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
     }
 
     @Override
     public String showVehicleState() {
-
         return "This vehicle has an acceleration of: " + this.accelerationRate
                 + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
-    }
-
-    //Minor Methods
-    public void corollaLightsDim(double percentDimming){
-        this.lightsDimPercentage = percentDimming;
-        System.out.println("Lights have been dimmed to " + this.lightsDimPercentage);
-
     }
 
     //Getters
@@ -76,9 +61,5 @@ public class ToyotaCorolla extends ToyotaVehicle implements Vehicle {
 
     public boolean isLightsOn() {
         return lightsOn;
-    }
-
-    public double getLightsDimPercentage() {
-        return lightsDimPercentage;
     }
 }

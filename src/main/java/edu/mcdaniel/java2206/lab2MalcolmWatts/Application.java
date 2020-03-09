@@ -1,8 +1,10 @@
-package edu.mcdaniel.java2206.lab2;
+package edu.mcdaniel.java2206.lab2MalcolmWatts;
 
-import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
-import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
-import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.toyotas.ToyotaCamry;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.toyotas.ToyotaCorolla;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.fords.FordF150;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.fords.FordFocus;
 import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

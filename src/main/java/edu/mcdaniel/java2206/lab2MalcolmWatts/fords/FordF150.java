@@ -1,9 +1,9 @@
-package edu.mcdaniel.java2206.lab2.toyotas;
+package edu.mcdaniel.java2206.lab2MalcolmWatts.fords;
 
-import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
-import edu.mcdaniel.java2206.lab2.vehicles.ToyotaVehicle;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.interfaces.Vehicle;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.vehicles.FordVehicle;
 
-public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
+public class FordF150 extends FordVehicle implements Vehicle {
 
     //Private Assets
     private double accelerationRate;
@@ -12,9 +12,9 @@ public class ToyotaCamry extends ToyotaVehicle implements Vehicle {
     private boolean lightsOn;
 
     //Constructors
-    public ToyotaCamry(){
+    public FordF150(){
         super();
-        setModel("Camry");
+        setModel("F150");
         this.lightsOn = false;
     }
 

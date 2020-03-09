@@ -1,6 +1,6 @@
-package edu.mcdaniel.java2206.lab2.car;
+package edu.mcdaniel.java2206.lab2MalcolmWatts.car;
 
-import edu.mcdaniel.java2206.lab2.gravity.GravityBaseClass;
+import edu.mcdaniel.java2206.lab2MalcolmWatts.gravity.GravityBaseClass;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

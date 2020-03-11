@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import edu.mcdaniel.java2206.lab2.Fords.FordF150;
 import edu.mcdaniel.java2206.lab2.Fords.*;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,7 +96,7 @@ public class Application {
         System.out.println("Predefined behavior ends.");
         //===// Do not modify, please //=========================================================//
         //Here I'm making the Ford Vehicles
-        Vehicle veh3 = new FordFocus();
+        Vehicle veh3 = (Vehicle) new FordFocus();
         Vehicle veh4 = new FordF150();
 
         //Adding these to the list

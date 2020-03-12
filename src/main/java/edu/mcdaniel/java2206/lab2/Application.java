@@ -1,5 +1,6 @@
 package edu.mcdaniel.java2206.lab2;
 
+import edu.mcdaniel.java2206.lab2.Fords.FordFocus;
 import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCamry;
 import edu.mcdaniel.java2206.lab2.toyotas.ToyotaCorolla;
@@ -7,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import edu.mcdaniel.java2206.lab2.Fords.FordF150;
-import edu.mcdaniel.java2206.lab2.Fords.*;
 
 
 import java.util.ArrayList;
@@ -96,7 +96,7 @@ public class Application {
         System.out.println("Predefined behavior ends.");
         //===// Do not modify, please //=========================================================//
         //Here I'm making the Ford Vehicles
-        Vehicle veh3 = (Vehicle) new FordFocus();
+        Vehicle veh3 = new FordFocus();
         Vehicle veh4 = new FordF150();
 
         //Adding these to the list

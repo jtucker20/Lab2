@@ -1,32 +1,72 @@
-package edu.mcdaniel.java2206.lab2;
+package edu.mcdaniel.java2206.lab2.Fords;
 
-import edu.mcdaniel.java2206.lab2.car.CarBaseClass;
 import edu.mcdaniel.java2206.lab2.interfaces.Vehicle;
 import edu.mcdaniel.java2206.lab2.vehicles.FordVehicle;
 
-public class FordFocus extends CarBaseClass {
+public class FordFocus extends FordVehicle implements Vehicle {
 
+    //Private Assets
+    private double accelerationRate;
+    private double distance;
 
-        private double speed;
+    private boolean lightsOn;
 
-        public FordFocus(){
-            super();
-            setModel("Ford");
-            speed=0;
+    //Constructors
+    public FordFocus(){
+        super();
+        setModel("Ford");
+        this.lightsOn = false;
+    }
 
+    //Major Methods
+    @Override
+    public void accel(double percentOfMaxAccel) {
+        this.accelerationRate = percentOfMaxAccel;
+    }
 
-        }
+    @Override
+    public void brake(double percentOfMaxBrake) {
+        this.accelerationRate = this.accelerationRate - percentOfMaxBrake;
+    }
 
-        public String displaySpeedAsString(){
-            return "This Ford's speed is: " + speed;
-        }
+    @Override
+    public void turnOnLights() {
+        this.lightsOn = true;
+    }
 
+    @Override
+    public void toggleLights() {
+        this.lightsOn = !this.lightsOn;
+    }
 
-        public double getSpeed() {
-            return speed;
-        }
+    @Override
+    public String showLightsStatus() {
+        return "The Lights are " + ( (this.lightsOn) ? "On" : "Off");
+    }
 
-        public void setSpeed(double speed) {
-            this.speed = speed;
-        }
+    @Override
+    public String showVehicleState() {
+        return "This vehicle has an acceleration of: " + this.accelerationRate
+                + "\nThis vehicle has it's lights " + ((this.lightsOn) ? "On" : "Off");
+    }
+
+    //Getters
+    public double getAccelerationRate() {
+        return accelerationRate;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public boolean isLightsOn() {
+        return lightsOn;
+    }
 }
+
+
+
+
+
+
+
